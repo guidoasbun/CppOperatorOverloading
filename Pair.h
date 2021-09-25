@@ -15,6 +15,7 @@ class Pair
     // Declaration of overloaded addition operator as a friend function.
     friend Pair operator+(const Pair& leftPair, const Pair& rightPair);
 
+
 public:
     Pair() : first(0), second(0) {}
     Pair(int firstValue, int secondValue);

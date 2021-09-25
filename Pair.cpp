@@ -61,3 +61,52 @@ Pair Pair::operator*(const Pair& p) const
     return temp;
 }
 
+
+
+/*
+ * Write the definition of the insertion operator as a
+ * friend function so that it prints "$ #", where # will be
+ * replaced with the amount. Do not worry about decimal format;
+ * it is already considered in the testing cases.
+ *
+ * ostream& operator<<(ostream& out, const Money& theAmount)
+    {
+        out << "$ " << theAmount.amount;
+        return out;
+    }
+ * */
+
+/*
+ * Write the definition of the less-than operator as a friend function.
+ * The function returns true if amount1 is less than amount2, and false otherwise.
+
+Function call: (amount1 < amount2)
+Both amount1 and amount2 are objects of the class Money.
+
+Parameters: You need to determine what to pass according to the implementation of this function.
+
+ bool operator<(const Money& amount1, const Money& amount2)
+    {
+        return (amount1.amount < amount2.amount);
+    }
+ * */
+
+
+/*
+ * Write the definition of the plus operator as a member function of the class Money.
+ * The function returns an object of the class Money by value that stores the sum of both amounts.
+
+Function call: totalAmount = (amount1 + amount2)
+totalAmount, amount1, and amount2 are objects of the class Money.
+
+Parameters: You need to determine what to pass according to the implementation of this function.
+
+ Money Money::operator+(const Money& otherAmount) const
+    {
+        return Money (amount + otherAmount.amount);
+    }
+ * */
+
+/*
+ *
+ * */
