@@ -108,5 +108,35 @@ Parameters: You need to determine what to pass according to the implementation o
  * */
 
 /*
- *
+ *Write the definition of the comparison operator equal as a member function.
+ * The function returns true if amount1 is equal to amount2, and false otherwise.
+
+Function call: (amount1 == amount2)
+Both amount1 and amount2 are objects of the class Money.
+
+Parameters: You need to determine what to pass according to the implementation
+ of this function.
+
+ bool Money::operator==(const Money& otherAmount) const
+    {
+        return (amount == otherAmount.amount);
+    }
+ * */
+
+
+/*
+ *Write the definition of the comparison operator equal as a non-member function.
+ * The function returns true if amount1 is equal to amount2, and false otherwise.
+
+Function call: (amount1 == amount2)
+Both amount1 and amount2 are objects of the class Money.
+
+Parameters: You need to determine what to pass according to the implementation
+ of this function.
+
+ bool operator==(const Money& amount1, const Money& amount2)
+    {
+         return (amount1.getAmount() == amount2.getAmount());
+    }
+
  * */
